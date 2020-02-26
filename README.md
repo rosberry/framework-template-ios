@@ -1,5 +1,8 @@
 # MyFramework
 <p align="center">
+    <a href="https://github.com/rosberry/MyFramework/actions">
+      <img src="https://github.com/rosberry/MyFramework/workflows/Build/badge.svg" />
+    </a>
     <a href="https://swift.org/">
         <img src="https://img.shields.io/badge/swift-5.0-orange.svg" alt="Swift Version" />
     </a>
@@ -46,7 +49,7 @@ dependencies: [
 
 ## Documentation
 
-Read the [docs][https://rosberry.github.io/MyFramework]. Generated with [jazzy](https://github.com/realm/jazzy). Hosted by [GitHub Pages](https://pages.github.com).
+Read the [docs](https://rosberry.github.io/MyFramework). Generated with [jazzy](https://github.com/realm/jazzy). Hosted by [GitHub Pages](https://pages.github.com).
 
 ## About
 
