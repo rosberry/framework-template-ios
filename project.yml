@@ -5,14 +5,14 @@ targets:
   MyFramework:
     type: framework
     platform: iOS
-    sources: [Sources/1]
+    sources: [Sources/MyFramework]
     info:
       path: MyFramework.xcodeproj/MyFramework.plist
   MyFrameworkTests:
     type: bundle.unit-test
     platform: iOS
     deploymentTarget: "12.0"
-    sources: [Sources/1Tests]
+    sources: [Sources/MyFrameworkTests]
     info:
       path: MyFramework.xcodeproj/MyFrameworkTests.plist
   Example:
