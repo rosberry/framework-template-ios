@@ -7,7 +7,7 @@ final class ExampleViewController: UIViewController {
 
     private lazy var greetingLabel: UILabel = {
         let label = UILabel()
-        label.text = "Greeting, traveller"
+        label.text = "Greetings, traveller"
         return label
     }()
     
