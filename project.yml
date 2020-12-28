@@ -22,13 +22,3 @@ targets:
     sources: [Sources/Example]
     info:
       path: MyFramework.xcodeproj/Example.plist
-      properties:
-        UILaunchStoryboardName: LaunchScreen
-        UIMainStoryboardFile: Main
-        UIApplicationSceneManifest:
-          UIApplicationSupportsMultipleScenes: false
-          UISceneConfigurations:
-            UIWindowSceneSessionRoleApplication:
-              - UISceneConfigurationName: Default Configuration
-                UISceneStoryboardFile: Main
-                UISceneDelegateClassName: $(PRODUCT_MODULE_NAME).SceneDelegate
