@@ -1,0 +1,34 @@
+name: MyFramework
+options:
+  bundleIdPrefix: com.rosberry
+targets:
+  MyFramework:
+    type: framework
+    platform: iOS
+    sources: [Sources/1]
+    info:
+      path: MyFramework.xcodeproj/MyFramework.plist
+  MyFrameworkTests:
+    type: bundle.unit-test
+    platform: iOS
+    deploymentTarget: "12.0"
+    sources: [Sources/1Tests]
+    info:
+      path: MyFramework.xcodeproj/MyFrameworkTests.plist
+  Example:
+    type: application
+    platform: iOS
+    deploymentTarget: "12.0"
+    sources: [Sources/Example]
+    info:
+      path: MyFramework.xcodeproj/Example.plist
+      properties:
+        UILaunchStoryboardName: LaunchScreen
+        UIMainStoryboardFile: Main
+        UIApplicationSceneManifest:
+          UIApplicationSupportsMultipleScenes: false
+          UISceneConfigurations:
+            UIWindowSceneSessionRoleApplication:
+              - UISceneConfigurationName: Default Configuration
+                UISceneStoryboardFile: Main
+                UISceneDelegateClassName: $(PRODUCT_MODULE_NAME).SceneDelegate
