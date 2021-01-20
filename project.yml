@@ -15,6 +15,9 @@ targets:
     sources: [Tests/MyFrameworkTests]
     info:
       path: MyFramework.xcodeproj/MyFrameworkTests.plist
+    postCompileScripts:
+      - script: swiftlint
+        name: Swiftlint
   Example:
     type: application
     platform: iOS
@@ -24,3 +27,6 @@ targets:
       path: MyFramework.xcodeproj/Example.plist
     dependencies:
       - target: MyFramework
+    postCompileScripts:
+      - script: swiftlint
+        name: Swiftlint
