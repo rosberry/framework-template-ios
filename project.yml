@@ -22,3 +22,5 @@ targets:
     sources: [Sources/Example]
     info:
       path: MyFramework.xcodeproj/Example.plist
+    dependencies:
+      - target: MyFramework
