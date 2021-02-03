@@ -34,6 +34,7 @@ carts:
 
 <details>
   <summary>To install MyFramework via SPM or CocoaPods</summary>
+
   #### Via SPM
   Add this to your Depofile:
 
