@@ -21,6 +21,40 @@
 
 ## Installation
 
+### Depo
+
+[Depo](https://github.com/rosberry/depo) is a universal dependency manager that combines Carthage, SPM and CocoaPods and provides common user interface to all of them.
+
+To install `MyFramework` via Carthage using Depo you need to add this to your `Depofile`:
+```yaml
+carts:
+  - kind: github
+    identifier: rosberry/MyFramework
+```
+
+<details>
+  <summary>To install MyFramework via SPM or CocoaPods</summary>
+  #### Via SPM
+  Add this to your Depofile:
+
+  ```yaml
+  swiftPackages:
+    - name: MyFramework
+      url: https://github.com/rosberry/MyFramework.git
+      version:
+        operation: upToNextMajor
+        value: 1.0.0
+  ```
+  
+  #### Via CocoaPods
+  Add this to your Depofile:
+  
+  ```yaml
+  pods:
+    - name: MyFramework
+  ```
+</details>
+
 ### Carthage
 
 [Carthage](https://github.com/Carthage/Carthage) is a decentralized dependency manager that builds your dependencies and provides you with binary frameworks. To integrate MyFramework into your Xcode project using Carthage, specify it in your `Cartfile`:
